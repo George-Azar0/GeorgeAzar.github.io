@@ -1,0 +1,141 @@
+* {
+     box-sizing: border-box;
+   }
+body{
+    background-color: #12141C;
+    font-family: Jura, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #E8ECF2;
+    margin: 20px;
+    position: relative;
+}
+.corner-rose {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 90px;
+  height: auto;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (min-width: 48rem) {
+  .corner-rose { width: 140px; }
+}
+
+@media (min-width: 64rem) {
+  .corner-rose { width: 200px; }
+}
+.corner-rosary {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: auto;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (min-width: 48rem) {
+  .corner-rosary { width: 140px; }
+}
+
+@media (min-width: 64rem) {
+  .corner-rosary { width: 200px; }
+}
+
+@media (min-width: 48rem) {
+  body::before,
+  body::after {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 64rem) {
+  body::before,
+  body::after {
+    width: 200px;
+    height: 200px;
+  }
+}
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;   
+  gap: 1.5rem;
+}
+
+@media (min-width: 48rem) {  
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64rem) {  
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+h1{
+   
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;  
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(0, 110, 105);
+
+}
+p{
+color: #6FA8DC;
+    text-align: center;
+    font-weight: bold;
+}
+ .navbar ul {
+  list-style-type: none;
+  background-color: #12141C;
+  margin: 0;
+  padding: 0;
+  display: flex;            
+  border: 2px solid #6FA8DC; 
+  overflow: hidden;          
+  border-radius: 25px;
+
+ }
+.navbar li {
+  flex: 1;                 
+}
+
+.navbar a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 15px 0;          
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.navbar a:hover {
+  background-color: darkblue;
+}
+div{
+    border: 2px solid;
+    height: auto;
+    padding: 10px;
+    float: initial;
+    width:20%;
+    box-sizing: border-box;
+border-radius: 25px;
+}
+main, footer{
+  position: relative;
+  z-index: 1;
+}
